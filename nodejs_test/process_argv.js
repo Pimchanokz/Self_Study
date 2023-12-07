@@ -23,4 +23,4 @@ else if(shape === 'rec'){
     area = get_rectangle_area(Number(w), Number(h))
 }
 console.log(argument)
-console.log(`kscks = ${area}`)
+console.log(`0 = ${area}`)
