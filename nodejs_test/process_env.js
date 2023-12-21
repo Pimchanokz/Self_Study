@@ -1,2 +1,5 @@
-const dbString = "mysql://root:pass1234@127.0.0.1:3306/mydb99"
-console.log(process.env) //env = environment
+require('dotenv').config()
+const {MYSQL_USERNAME,MYSQL_PASSWORD,MYSQL_HOSTNAME,MYSQL_PORT, MYSQL_DB} = process.env
+const dbString = `mysql://${MYSQL_USERNAME}:${MYSQL_PASSWORD}@${MYSQL_HOSTNAME}:${MYSQL_PORT}/${MYSQL_DB}`
+// console.log(process.env) //env = environment
+console.log(dbString)
