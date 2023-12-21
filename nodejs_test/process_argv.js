@@ -20,7 +20,7 @@ if (shape === 'tri'){
     area = get_triangle_area(w, h)
 }
 else if(shape === 'rec'){
-    area = get_rectangle_area(w, h))
+    area = get_rectangle_area(w, h)
 }
 console.log(argument)
 console.log(clean_argument)
